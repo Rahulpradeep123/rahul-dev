@@ -2,8 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path'
 import glob from 'fast-glob'
 
-const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
-const base = isGitHubActions ? '/learnhub-1.0.0/' : './';
+const base = './';
 
 // Grab all HTML files inside src (including subfolders)
 const htmlFiles = glob.sync('./src/**/*.html')
